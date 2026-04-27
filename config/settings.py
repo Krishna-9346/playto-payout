@@ -150,4 +150,8 @@ import dj_database_url
 import os
 
 if os.environ.get('DATABASE_URL'):
-    DATABASES['default'] = dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    DATABASES['default'] = dj_database_url.parse(
+        os.environ.get('DATABASE_URL')
+    )
+
+ALLOWED_HOSTS = ['playto-payout-9l58.onrender.com', 'localhost', '127.0.0.1']
